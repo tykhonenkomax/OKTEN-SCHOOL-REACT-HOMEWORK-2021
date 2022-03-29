@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import jsonComponents from "./myFolder/jsonComponents";
+import {useState} from "react";
+import CounterComponents from "./myFolder/CounterComponents";
 
 function App() {
+
     return (
 
         <div>
-
+            <CounterComponents/>
         </div>
 
     );
