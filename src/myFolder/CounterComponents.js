@@ -1,25 +1,30 @@
 import {useState} from "react";
 
-function CounterComponents(props) {
+function CounterComponents() {
+
+
     let [counter, setCounter]=useState(0)
 
-let plus = () =>{
-setCounter(++counter)
-};
+    let plus = () =>{
+        setCounter(++counter)
+    };
     let minus = () =>{
-setCounter(--counter)
+        setCounter(--counter)
     };
     let reset = () =>{
-setCounter(0)
+        setCounter(0)
     };
 
+
+
     return(
+
         <div>
 
 <h1>Counter - ${counter}</h1>
-<button onClick={plus}>increment</button>
-<button onClick={minus}>increment</button>
-<button onClick={reset}>increment</button>
+<button onClick={plus}>PLUS</button> <br/>
+<button onClick={minus}>MINUS</button> <br/>
+<button onClick={reset}>RESET</button> <br/>
         </div>
     );
 }
