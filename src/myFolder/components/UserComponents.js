@@ -1,10 +1,11 @@
-function UserComponents({item,fatherFunction}) {
+function UserComponents({item,search}) {
        return(
         <div>
             {item.id} -
             {item.name} -
-            {item.email} -
-            <button onClick={fatherFunction}>Push ME</button>
+            {item.username};
+
+            <button onClick={()=> search(item.id)}>Push ME</button>
         </div>
     );
 }
