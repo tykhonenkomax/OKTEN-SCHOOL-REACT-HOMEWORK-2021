@@ -5,4 +5,5 @@ function getUsers() {
 function idUsers(id) {
     return fetch('https://jsonplaceholder.typicode.com/users/' + id).then(value => value.json())
 }
+
 export {getUsers, idUsers}
