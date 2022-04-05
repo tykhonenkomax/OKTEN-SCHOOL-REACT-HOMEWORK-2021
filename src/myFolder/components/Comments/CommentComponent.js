@@ -7,24 +7,20 @@ function CommentComponents() {
 
         fetch('https://jsonplaceholder.typicode.com/comments')
             .then(value => value.json())
-            .then(value => {value.length=10;
+            .then(value => {
+                value.length=10;
                 setComments(value)
-
             });
 
     },[])
 
-
-
-
     return(
         <div>
             {
-
-                comment.map(value => <p key={value.id}>{value.id} {value.name}: - {value.body}</p>)
-
+                comment.map(value => <p key={value.id}>
+                    <strong> {value.id} </strong>
+                    {value.name}: - {value.body}</p>)
             }
-
         </div>
     );
 }

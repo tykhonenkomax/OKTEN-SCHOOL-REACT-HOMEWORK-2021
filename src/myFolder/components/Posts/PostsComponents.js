@@ -5,24 +5,19 @@ function UserComponents() {
  let[post,setPosts]=useState([])
 
     useEffect(()=>{
-
-
             fetch('https://jsonplaceholder.typicode.com/posts')
                 .then(value => value.json())
-                .then(value => {value.length = 10;
+                .then(value => {
+                    value.length = 10;
                     setPosts(value)
                 });
-
-
     },[])
-
 
     return(
         <div>
             {
-                post.map(value => <p key={value.id}>{value.id}{value.body}</p>)
+                post.map(value => <p key={value.id}>{value.body}</p>)
             }
-
         </div>
     );
 }

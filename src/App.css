@@ -1,8 +1,21 @@
-.posts {
-    font-size: 16px;
-    border-box: 1px black;
+body{
+    background: darkolivegreen;
 }
+.posts {
+    font-size: 14px;
+    margin-left: 20px;
+}
+.users{
+    font-size: 14px;
 
+}
 .usersPosts{
     display: flex;
+    align-items: center;
+
+}
+.comments{
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
