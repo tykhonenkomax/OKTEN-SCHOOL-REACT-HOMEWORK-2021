@@ -33,18 +33,15 @@ const UsersComponents = () => {
             <div className={'userInformation'}>
                 {
                  user && <h3>
-                    <p> №. {user.id}</p>
-                    <p>Name: {user.name}</p>
-                    <p>Surname: {user.username}</p>
-                    <p>Email: {user.email}</p>
-                    <p>Street: {user.address.street}</p>
-                    <p>Suite: {user.address.suite}</p>
-                    <p>City: {user.address.city}</p>
-                    <p>Zipcode: {user.address.zipcode}</p>
+                    <p className={'pSpace'}> №. {user.id}</p>
+                    <p className={'pSpace'}>Name: {user.name}</p>
+                    <p className={'pSpace'}>Surname: {user.username}</p>
+                    <p className={'pSpace'}>Email: {user.email}</p>
+                    <p className={'pSpace'}>Street: {user.address.street}</p>
+                    <p className={'pSpace'}>Suite: {user.address.suite}</p>
+                    <p className={'pSpace'}>City: {user.address.city}</p>
+                    <p className={'pSpace'}>Zipcode: {user.address.zipcode}</p>
                     </h3>
-
-
-
                 }
 
         </div>

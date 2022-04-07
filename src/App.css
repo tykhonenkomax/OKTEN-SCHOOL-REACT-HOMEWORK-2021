@@ -1,3 +1,30 @@
+body{
+  background: dimgrey;
+}
+
 .userPage{
   display: flex;
+}
+.pSpace{
+  padding: 0px;
+  margin: 0px
+}
+.userInformation{
+  border:1px solid dimgrey;
+}
+.userInformation:hover {
+  border:1px solid black;
+  background: gray;
+}
+.button{
+  background:grey;
+  width: 100px;
+  height: 20px;
+  border:1px solid black;
+}
+.button:hover{
+  background:dimgrey;
+  width: 100px;
+  height: 20px;
+  border:1px solid black;
 }

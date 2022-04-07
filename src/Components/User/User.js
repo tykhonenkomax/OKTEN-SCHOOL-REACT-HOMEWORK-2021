@@ -6,7 +6,7 @@ function User ({item, detailsUser}) {
             {item.id}
             {item.name} -
             {item.username}
-            <button onClick={() => detailsUser(item.id)}>Get Details</button>
+            <button className={'button'} onClick={() => detailsUser(item.id)}>Get Details</button>
         </div>
     );
 };
