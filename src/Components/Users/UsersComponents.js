@@ -2,9 +2,12 @@ import React, {useEffect, useState} from 'react';
 import User from "../User/User";
 
 
-const UsersComponents = () => {
+
+
+const UsersComponents = ({setPosts}) => {
     const [users, setUsers]= useState([])
     const [user, setUser]= useState(null)
+
 
     useEffect(()=>{
 
@@ -18,6 +21,12 @@ const UsersComponents = () => {
     const detailsUser = (id)=>{
         let objDetails =users.find(value => value.id === id)
         setUser(objDetails)
+    }
+
+    const getUserPosts =(id)=>{
+        fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)
+            .then(value => value.json())
+            .then(value => setPosts(value))
     }
 
     return (
@@ -45,7 +54,7 @@ const UsersComponents = () => {
                     <p className={'pSpace'}>Suite: {user.address.suite}</p>
                     <p className={'pSpace'}>City: {user.address.city}</p>
                     <p className={'pSpace'}>Zipcode: {user.address.zipcode}</p>
-                    <button className={'button2'}> Get Comments</button>
+                    <button className={'button2'} onClick={()=>getUserPosts(user.id)}> Get Comments</button>
                     </h3>
                 }
             </div>
