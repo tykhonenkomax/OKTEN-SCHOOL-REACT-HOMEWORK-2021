@@ -1,16 +1,16 @@
 body{
-  background: dimgrey;
+  background: darkgray;
 }
 
 .userPage{
   display: flex;
 }
 .pSpace{
-  padding: 0px;
-  margin: 0px
+  padding: 0;
+  margin: 0;
 }
 .userInformation{
-  border:1px solid dimgrey;
+  border:1px solid darkgray;
 }
 .userInformation:hover {
   border:1px solid black;
@@ -21,10 +21,36 @@ body{
   width: 100px;
   height: 20px;
   border:1px solid black;
+  margin-left: 20px;
+
+
 }
 .button:hover{
   background:dimgrey;
   width: 100px;
   height: 20px;
   border:1px solid black;
+}
+.information{
+  display: flex;
+  margin-left: 10px;
+}
+
+.button2{
+  background:grey;
+  width: 150px;
+  height: 20px;
+  border:1px solid black;
+  margin-left: 20px;
+}
+
+.button2:hover{
+  background:dimgrey;
+  width: 150px;
+  height: 20px;
+  border:1px solid black;
+}
+.h3{
+  padding: 0;
+  margin: 0;
 }

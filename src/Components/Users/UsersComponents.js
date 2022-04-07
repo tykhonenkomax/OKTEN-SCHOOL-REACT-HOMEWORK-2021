@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import User from "../User/User";
+import Post from "../Post/Post";
 
 const UsersComponents = () => {
     const [users, setUsers]= useState([])
@@ -32,7 +33,7 @@ const UsersComponents = () => {
         </div>
             <div className={'userInformation'}>
                 {
-                 user && <h3>
+                 user && <h3 className={'h3'}>
                     <p className={'pSpace'}> №. {user.id}</p>
                     <p className={'pSpace'}>Name: {user.name}</p>
                     <p className={'pSpace'}>Surname: {user.username}</p>
@@ -41,10 +42,12 @@ const UsersComponents = () => {
                     <p className={'pSpace'}>Suite: {user.address.suite}</p>
                     <p className={'pSpace'}>City: {user.address.city}</p>
                     <p className={'pSpace'}>Zipcode: {user.address.zipcode}</p>
+                    <button className={'button2'} onClick={()=><Post/>}>Get Comments</button>
                     </h3>
                 }
 
         </div>
+
 
         </div>
     );
