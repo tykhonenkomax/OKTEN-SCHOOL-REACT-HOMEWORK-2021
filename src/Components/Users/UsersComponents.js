@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import User from "../User/User";
-import Post from "../Post/Post";
+
 
 const UsersComponents = () => {
     const [users, setUsers]= useState([])
     const [user, setUser]= useState(null)
+
     useEffect(()=>{
 
         fetch('https://jsonplaceholder.typicode.com/users')
@@ -20,6 +21,7 @@ const UsersComponents = () => {
     }
 
     return (
+
         <div className={'userPage'}>
 
         <div  className={'users'}>
@@ -31,6 +33,7 @@ const UsersComponents = () => {
                 />)
             }
         </div>
+
             <div className={'userInformation'}>
                 {
                  user && <h3 className={'h3'}>
@@ -42,14 +45,15 @@ const UsersComponents = () => {
                     <p className={'pSpace'}>Suite: {user.address.suite}</p>
                     <p className={'pSpace'}>City: {user.address.city}</p>
                     <p className={'pSpace'}>Zipcode: {user.address.zipcode}</p>
-                    <button className={'button2'} onClick={()=><Post/>}>Get Comments</button>
+                    <button className={'button2'}> Get Comments</button>
                     </h3>
                 }
+            </div>
+
 
         </div>
 
 
-        </div>
     );
 };
 

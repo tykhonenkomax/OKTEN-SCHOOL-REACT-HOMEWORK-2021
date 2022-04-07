@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
 <UsersComponents/>
-        <PostsComponents/>
+<PostsComponents/>
     </div>
   );
 }

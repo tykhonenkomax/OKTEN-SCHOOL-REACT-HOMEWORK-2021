@@ -4,18 +4,13 @@ const Post = ({item}) => {
     return (
         <div>
             {
-                <h3>
-               <p>{item.userId}</p>
-                <p>  {item.id}</p>
-                <p>{item.title}</p>
-                <p>{item.body} </p>
-                </h3>
+                <div>
+                    <p> {item.id} .) - {item.title}</p>
+                    <p>{item.body}</p>
+                </div>
             }
-
-
-
         </div>
     );
 };
 
-export default Post;
+export default (Post)
