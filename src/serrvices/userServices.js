@@ -1,5 +1,5 @@
 import {axiosServices} from "./axiosServices";
-import {links} from "../Links";
+import {links} from "../links";
 
 
 const userService ={
