@@ -1,12 +1,11 @@
 import './App.css';
-import {OneUser} from "./components/OneUser";
-
+import {UsersComponents} from "./components/Users";
 
 
 function App() {
   return (
     <div>
-<OneUser/>
+        <UsersComponents/>
     </div>
   );
 }

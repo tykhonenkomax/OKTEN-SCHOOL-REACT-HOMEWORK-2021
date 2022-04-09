@@ -1,4 +1,4 @@
-const link =process.env.REACT_APP_APPI
+const link =process.env.REACT_APP_API
 
 let links={
     users:'./users',
