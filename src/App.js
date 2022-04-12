@@ -6,7 +6,7 @@ import {CarsComponents} from "./components/Cars";
 function App() {
   return (
     <div>
-      <FormsComponents/>
+        <FormsComponents/>
         <CarsComponents/>
     </div>
   );
