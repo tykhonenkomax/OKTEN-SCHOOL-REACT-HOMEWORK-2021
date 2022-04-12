@@ -6,7 +6,7 @@ import CarsComponents from "./Components/CarsComponents/CarsComponents";
 function App() {
   return (
     <div>
-<FormComponents/>
+        <FormComponents/>
         <hr/>
         <CarsComponents/>
     </div>
@@ -14,3 +14,5 @@ function App() {
 }
 
 export default App;
+
+// закончил на 38:24
