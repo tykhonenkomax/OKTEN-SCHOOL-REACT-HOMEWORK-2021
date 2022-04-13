@@ -1,12 +1,13 @@
 import {axiosServices} from "./AxiosServices";
-import urls from "../Links/Urls";
+import {links} from "../Links";
+
 
 const CRUDCarServices={
-    getCars:()=>axiosServices.get(urls.cars),
-    createCars:(car)=>axiosServices.post(urls.cars, car),
-    deleteCarsById:(id)=>axiosServices.delete( `${urls.cars}/${id}`),
-    getCarsById:(id)=>axiosServices.get(`${urls.cars}/${id}`),
-    refreshObjectCars:(id)=>axiosServices.put(`${urls.cars}${id}`)
+    getCars:()=>axiosServices.get(links.cars),
+    createCars:(car)=>axiosServices.post(links.cars, car),
+    deleteCarsById:(id)=>axiosServices.delete( `${links.cars}/${id}`),
+    getCarsById:(id)=>axiosServices.get(`${links.cars}/${id}`),
+    refreshObjectCars:(id)=>axiosServices.put(`${links.cars}${id}`)
 
 }
 export {CRUDCarServices}

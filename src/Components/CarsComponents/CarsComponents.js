@@ -7,7 +7,7 @@ import CarComponents from "../CarComponents/CarComponents";
 
 
 const CarsComponents = () => {
-   const{cars, setCars}= useState([])
+   const[cars, setCars]= useState([])
 
     useEffect(()=>{
         CRUDCarServices.getCars().then(({data})=>setCars(data))
