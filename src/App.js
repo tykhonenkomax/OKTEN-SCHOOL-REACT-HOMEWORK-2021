@@ -8,17 +8,19 @@ import {HomePage} from "./Pages/HomePage/HomePage";
 import {UsersPage} from "./Pages/UsersPage/UsersPage";
 import {PostsPage} from "./Pages/PostsPage/PostsPage";
 import {AboutPage} from "./Pages/About Page/AboutPage";
-import {NotFoundPage} from "./Pages";
+import {NotFoundPage, SinglePage} from "./Pages";
 
 function App() {
   return (
 <Routes>
     <Route path={'/'} element={<MainLayouts/>}>
       <Route index element={<Navigate to={'/home'}/>}/>
-  <Route path={'/home'} element ={<HomePage/>}/>
-  <Route path={'/users'} element={<UsersPage/>}/>
-  <Route path={'/posts'} element={<PostsPage/>}/>
-  <Route path={'/about'} element={<AboutPage/>}/>
+  <Route path={'home'} element ={<HomePage/>}/>
+  <Route path={'users'} element={<UsersPage/>}/>
+  <Route path={'posts'} element={<PostsPage/>}>
+    <Route path={':id'} element={<SinglePage/>}/>
+    </Route>
+  <Route path={'about'} element={<AboutPage/>}/>
   <Route path={'*'} element={<NotFoundPage/>}/>
 
   </Route>

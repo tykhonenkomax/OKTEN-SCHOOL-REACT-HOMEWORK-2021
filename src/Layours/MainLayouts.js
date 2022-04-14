@@ -1,9 +1,10 @@
 import React from 'react';
 
 import css from './MainLayout.module.css';
-import {Outlet, Link} from 'react-router-dom';
+import {Outlet, Link, useNavigate} from 'react-router-dom';
 
 const MainLayouts = () => {
+    const navigate =useNavigate()
 
     return (
         <div>
@@ -16,6 +17,10 @@ const MainLayouts = () => {
 
             </div>
         <hr/>
+            <div>
+                <button onClick={()=>navigate(-1)}>prev</button>
+                <button onClick={()=>navigate(1)}>next</button>
+            </div>
             <Outlet/>
         </div>
 
