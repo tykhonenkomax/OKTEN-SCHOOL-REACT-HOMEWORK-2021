@@ -1,0 +1,16 @@
+.photo{
+    width: 60px;
+    margin-left: 15px;
+
+}
+.photoGeneral{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button1{
+    margin-left: 15px;
+    width: 100px;
+
+}
