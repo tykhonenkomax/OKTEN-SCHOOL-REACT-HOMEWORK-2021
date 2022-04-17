@@ -1,0 +1,9 @@
+.father{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    width: 500px;
+
+}

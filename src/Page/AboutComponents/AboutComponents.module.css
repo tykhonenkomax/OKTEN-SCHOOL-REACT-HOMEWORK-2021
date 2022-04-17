@@ -1,0 +1,55 @@
+.photoAbout{
+    width: 300px;
+}
+.textAbout{
+    margin: 0;
+    padding: 0;
+}
+.welcome{
+    margin: 0;
+    padding: 5px;
+}
+.welcome2{
+    margin: 0;
+    padding: 5px;
+
+}
+.welcome3{
+    margin: 0;
+    padding: 5px;
+}
+.welcome4{
+    margin-left: 5px;
+    font-size: 13px;
+    color: dimgrey;
+    font-family: "Roboto Light";
+}
+.welcomeFather{
+    display: flex;
+    justify-content: space-around;
+}
+.photoAbout2{
+    width: 380px;
+}
+.Father2{
+    display: flex;
+    margin-left: 10px;
+}
+.Father3{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+.Father3 a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.info1{
+    margin-left: 10px;
+}
