@@ -1,16 +1,35 @@
 .photo{
-    width: 60px;
-    margin-left: 15px;
+    width: 300px;
+
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.idFont{
+    color: white;
 
 }
 .photoGeneral{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: black;
 }
 
 .button1{
     margin-left: 15px;
-    width: 100px;
+    width: 150px;
+    background: black;
+    color: white;
+    border: 1px solid red;
+    font-family: Courier New;
 
+}
+.generalword{
+    font-family: Courier New;
+
+}
+.generalAboutWorker{
+    display:flex;
+    justify-content: space-around;
 }

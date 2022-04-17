@@ -5,4 +5,8 @@ const usersServices ={
     getAll: ()=>axiosServices.get(urls.users),
     getById:(id)=>axiosServices.get(`${urls.users}/${id}`)
 }
-export {usersServices}
+const postsServices ={
+    getAllPosts: ()=>axiosServices.get(urls.posts),
+    getByIdPosts:(id)=>axiosServices.get(`${urls.posts}/${id}`)
+}
+export {usersServices,postsServices}
