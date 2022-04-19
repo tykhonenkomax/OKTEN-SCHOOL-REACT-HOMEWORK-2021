@@ -20,7 +20,7 @@ const GeneralLayoutComponents = () => {
             </div>
 <div>
             <NavLink to="/about">| About |</NavLink>
-            <NavLink to="/users">Company staff</NavLink>
+            <NavLink to="/company_staff">Company staff</NavLink>
             <NavLink to="/posts">| Posts |</NavLink>
             <NavLink to="/comments">Comments |</NavLink>
 </div>

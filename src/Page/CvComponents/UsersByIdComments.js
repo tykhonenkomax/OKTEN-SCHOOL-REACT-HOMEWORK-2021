@@ -6,7 +6,7 @@ const UsersByIdComments = () => {
 
     const[userComments,setUserComments]=useState([])
     useEffect(()=>{
-        postsServices.getAllPosts().then(({data})=>setUserComments(data))
+        postsServices.getAllPosts().then(({data})=>setUserComments(data.slice(0,10)))
     },[])
 
 

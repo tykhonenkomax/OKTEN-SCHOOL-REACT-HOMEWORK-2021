@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {usersServices} from "../../Servivces";
 import {SingleUserComponents} from "../SingleUserComponents";
 
+
 const UsersComponents = () => {
 
     const[users, setUsers]= useState([])
@@ -13,9 +14,14 @@ const UsersComponents = () => {
 
     return (
         <div>
-            {
-             users.map(user=><SingleUserComponents key={user.id} userItem={user}/>)
-            }
+
+                <div>
+                    {
+                    users.map(user=><SingleUserComponents key={user.id} userItem={user}/>)
+                    }
+                </div>
+
+
         </div>
     );
 };

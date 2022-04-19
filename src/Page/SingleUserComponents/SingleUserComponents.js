@@ -1,5 +1,5 @@
 import css from './SingleUserComponents.module.css'
-import {CvComponents} from '../CvComponents'
+
 
 
 const SingleUserComponents = ({userItem}) => {
@@ -10,8 +10,10 @@ const SingleUserComponents = ({userItem}) => {
         <div>
             <div className={css.generalword}>
             <div className={css.photoGeneral}>
-                <p className={css.idFont}>Manager №: {id}</p>
-                <button className={css.button1} onClick={()=><CvComponents/>}>More information</button>
+            <p className={css.idFont}>Manager №: {id}</p>
+
+                <button className={css.button1}>More information</button>
+
             </div>
               <div className={css.generalAboutWorker}>
 
