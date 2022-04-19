@@ -1,4 +1,5 @@
 import css from './SingleUserComponents.module.css'
+import {Link} from "react-router-dom";
 
 
 
@@ -11,8 +12,10 @@ const SingleUserComponents = ({userItem}) => {
             <div className={css.generalword}>
             <div className={css.photoGeneral}>
             <p className={css.idFont}>Manager №: {id}</p>
+            <p><Link to={id.toString()} >MoreInformation</Link></p>
 
-                <button className={css.button1}>More information</button>
+
+
 
             </div>
               <div className={css.generalAboutWorker}>

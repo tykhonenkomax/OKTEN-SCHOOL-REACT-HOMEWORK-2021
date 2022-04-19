@@ -1,2 +1,2 @@
 export * from './CvComponents'
-export * from './UsersByIdComments'
+export * from './CvCommentsComponents'
