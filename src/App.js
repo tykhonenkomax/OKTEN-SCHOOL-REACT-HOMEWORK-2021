@@ -1,31 +1,28 @@
 
 import './App.css';
+import {Route,Routes,Navigate} from "react-router-dom";
 
-import {Routes, Route, Navigate} from 'react-router-dom';
+import {MainLayoutComponents, NotFoundPagesComponents} from "./Pages";
+import {HomePageComponents,UsersPageComponents,PostsPageComponents,AboutPageComponents} from "./Pages";
+import {SinglePostComponents} from "./Pages/SinglePostComponents/SinglePostComponents";
 
-import {MainLayouts} from "./Layours/MainLayouts";
-import {HomePage} from "./Pages/HomePage/HomePage";
-import {UsersPage} from "./Pages/UsersPage/UsersPage";
-import {PostsPage} from "./Pages/PostsPage/PostsPage";
-import {AboutPage} from "./Pages/About Page/AboutPage";
-import {NotFoundPage, SinglePage} from "./Pages";
 
 function App() {
   return (
-<Routes>
-    <Route path={'/'} element={<MainLayouts/>}>
-      <Route index element={<Navigate to={'/home'}/>}/>
-  <Route path={'home'} element ={<HomePage/>}/>
-  <Route path={'users'} element={<UsersPage/>}/>
-  <Route path={'posts'} element={<PostsPage/>}>
-    <Route path={':id'} element={<SinglePage/>}/>
-    </Route>
-  <Route path={'about'} element={<AboutPage/>}/>
-  <Route path={'*'} element={<NotFoundPage/>}/>
+      <Routes>
 
-  </Route>
+        <Route path={'/'} element={<MainLayoutComponents/>}>
+            <Route index element={<Navigate to={'home'}/>}/>
+        <Route path={'home'} element={<HomePageComponents/>}/>
+        <Route path={'users'} element={<UsersPageComponents/>}/>
+            <Route path={'posts'} element={<PostsPageComponents/>}>
+                <Route path={':id'} element={<SinglePostComponents/>}/>
+            </Route>
+        <Route path={'about'} element={<AboutPageComponents/>}/>
+            <Route  path={'*'} element={<NotFoundPagesComponents/>}/>
+        </Route>
 
-</Routes>
+      </Routes>
   );
 }
 
