@@ -10,7 +10,7 @@ const PostComponents = ({itemPost}) => {
                 <div>ID: {id}</div>
                 <div>TITLE: {title}</div>
                 <div>BODY: {body}</div>
-                <div><Link to={id.toString()}>Get Details</Link></div>
+                <div><Link to={id.toString()} state={itemPost}><button>Get Details</button></Link></div>
             </div>
             <hr/>
         </div>

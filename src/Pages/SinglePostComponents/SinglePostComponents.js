@@ -1,13 +1,22 @@
-import React, {useEffect, useState} from 'react';
-import {useParams} from "react-router-dom";
-import {postServices} from "../../Services";
+
+import {useLocation, useParams} from "react-router-dom";
+
 import {GetDetails} from "../GetDetails";
+import {postServices} from "../../Services";
+import {useEffect, useState} from "react";
 
 const SinglePostComponents = () => {
-const[post,setPost]=useState(null)
-   const {id}= useParams();
+    const {state}= useLocation()
+const[post,setPost]=useState(state)
+    const {id}= useParams();
+
    useEffect(()=>{
-       postServices.getById(id).then(({data})=>setPost(data))
+       if (!state){
+           postServices.getById(id).then(({data})=>setPost(data))
+       }else {
+           setPost(state)
+       }
+
    },[id])
     return (
         <div>
@@ -18,4 +27,4 @@ const[post,setPost]=useState(null)
     );
 };
 
-export {SinglePostComponents};
+export {SinglePostComponents}
