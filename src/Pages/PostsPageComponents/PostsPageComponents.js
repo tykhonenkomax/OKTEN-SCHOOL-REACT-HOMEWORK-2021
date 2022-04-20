@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {postServices} from "../../Services";
-import {PostComponets} from "../PostComponets";
+import {PostComponents} from "../PostComponents";
 import {Outlet} from "react-router-dom";
 
 const PostsPageComponents = () => {
@@ -15,7 +15,7 @@ const PostsPageComponents = () => {
         <div>
         <div>
             {
-                posts.map(post=><PostComponets key={post.id} itemPost={post}/>)
+                posts.map(post=><PostComponents key={post.id} itemPost={post}/>)
             }
         </div>
             <Outlet/>

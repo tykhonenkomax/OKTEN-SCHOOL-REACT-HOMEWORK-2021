@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 
-const PostComponets = ({itemPost}) => {
+const PostComponents = ({itemPost}) => {
     const {id,title,body}=itemPost;
     return (
         <div>
@@ -17,4 +17,4 @@ const PostComponets = ({itemPost}) => {
     );
 };
 
-export {PostComponets};
+export {PostComponents};
