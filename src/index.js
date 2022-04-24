@@ -5,31 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux";
 import {createStore} from "redux";
+import {store} from "./Redux";
 
 
 
-function reducer (state=0,action) {
-    switch (action.type){
-        case 'INC':
-            console.log(action.payload);
-            return state=state+action.payload;
-
-        case 'DEC':
-            return state=state-action.payload;
-        case 'RESET':
-            return state=action.payload;
-
-        default:
-            return state;
-    }
-
-
-}
-
-
-let store= createStore(reducer);
-console.log(store.getState());
-store.dispatch({type:'', payload: "!"})
 
 ReactDOM.render(
     <React.StrictMode>
